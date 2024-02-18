@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-hamburger {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  margin-top: 5px;
+}
+
+.sidebar-top,
+.sidebar-middle,
+.sidebar-bottom {
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  background-color: #004580;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.sidebar-middle,
+.menu-middle {
+  transform: translateY(10px);
+}
+
+.sidebar-bottom,
+.menu-bottom {
+  transform: translateY(20px);
+}
+
+.menu-hamburger {
+  position: relative;
+  width: 25px;
+  height: 25px;
+}
+
+.menu-top,
+.menu-middle,
+.menu-bottom {
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  background-color: black;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.menu-middle {
+  transform: translateY(7px);
+}
+
+.menu-bottom {
+  transform: translateY(14px);
+}
+
+.open-menu {
+  transform: rotate(90deg);
+  transition: all 0.5s;
+}
+
+.open-menu .menu-top {
+  transform: rotate(45deg) translateX(6px) translateY(6px);
+}
+
+.open-menu .menu-middle {
+  transform: translateY(-1000px);
+}
+
+.open-menu .menu-bottom {
+  transform: rotate(-45deg) translateX(-6px) translateY(6px);
+}
