@@ -84,3 +84,64 @@
 .open-menu .menu-bottom {
   transform: rotate(-45deg) translateX(-6px) translateY(6px);
 }
+
+/* filters css  */
+.filters {
+  height: 20px;
+  width: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.filters-top,
+.filters-middle,
+.filters-bottom {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transform: translateY(0) translateX(0);
+}
+
+.filters-middle {
+  width: 50%;
+  transform: translateY(2px) translateX(0);
+}
+
+.filters-bottom {
+  width: 25%;
+  transform: translateY(4px) translateX(0);
+}
+
+/* projects table css  */
+
+th:first-of-type {
+  border-top-left-radius: 10px;
+}
+th:last-of-type {
+  border-top-right-radius: 10px;
+}
+tr:last-of-type td:first-of-type {
+  border-bottom-left-radius: 10px;
+}
+tr:last-of-type td:last-of-type {
+  border-bottom-right-radius: 10px;
+}
+
+.projects-table th {
+  padding: 0.5rem 1rem;
+  background-color: #004580;
+  color: white;
+}
+
+.projects-table td {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  vertical-align: auto;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}

@@ -9,7 +9,7 @@ import { faUser } from "@fortawesome/free-solid-svg-icons";
 const Navbar = ({ setIsSidebarOpen }) => {
   const [openMenu, setOpenMenu] = useState(false);
   return (
-    <nav className="shadow-xl p-4">
+    <nav className="shadow-xl p-4 z-40">
       {/* nav container  */}
       <div className="max-w-6xl mx-auto  flex flex-row justify-between">
         {/* sidebar hamburger and location  */}
@@ -65,8 +65,8 @@ const Navbar = ({ setIsSidebarOpen }) => {
         <button
           className={
             openMenu
-              ? "menu-hamburger open-menu lg:hidden"
-              : "menu-hamburger  lg:hidden"
+              ? "menu-hamburger open-menu self-center  lg:hidden"
+              : "menu-hamburger self-center  lg:hidden"
           }
           onClick={() => setOpenMenu(!openMenu)}
         >

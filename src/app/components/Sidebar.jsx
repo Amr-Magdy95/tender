@@ -12,7 +12,7 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
       <div
         className={
           isSidebarOpen
-            ? "z-30 absolute top-0 bottom-0 left-0 right-0 bg-black  opacity-30 lg:hidden "
+            ? "z-30 fixed top-0 bottom-0 left-0 right-0 bg-black  opacity-30 lg:hidden "
             : "hidden"
         }
         onClick={() => setIsSidebarOpen(false)}
